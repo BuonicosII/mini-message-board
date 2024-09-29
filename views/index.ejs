@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <a href="/new">Post new message</a>
+    <% messages.map( (message, index) => {  %>
+      <div>
+        <p><%= message.user %></p>
+        <p><%= message.added %></p>
+        <p><%= message.text %></p>
+        <a href="/messages/<%= index %>">View</a>
+      </div>
+      <% }) %>
+  </body>
+</html>
